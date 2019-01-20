@@ -1,0 +1,1 @@
+This is just a mockup of my UI for the Andela Bootcamp
