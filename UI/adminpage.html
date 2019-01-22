@@ -90,7 +90,7 @@
 				<div class="row clearfix">
 					<ul class="row2tab clearfix">
                             <li><i class="fa fa-list-alt"></i><a href="#">Users</a></li>
-                            <li><i class="fa fa-heart"></i> <a href="#">Users</a></li>
+                            <li><i class="fa fa-heart"></i> <a href="#">Likes</a></li>
                             <li><i class="fa fa-check"></i> <a href="#">Users</a> </li>
                             <li><i class="fa fa-thumbs-o-down"></i> <a href="petition.html">Petitions</a> </li>
 					</ul>
@@ -127,7 +127,7 @@
                                   <td>PDP</td>
                                   <td>13/10/2018 11:02am</td>
                                   <td><button onclick="toggleModal('party-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
-                                  <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
+                                  <td><button onclick="toggleModal('party-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                                   <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                               </tr>
                               <tr>
@@ -136,7 +136,7 @@
                                   <td>Governor</td>
                                   <td>20/09/2018 10:19am</td>
                                   <td><button onclick="toggleModal('party-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
-                                  <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
+                                  <td><button onclick="toggleModal('party-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                                   <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                               </tr>
                               <tr>
@@ -145,7 +145,7 @@
                                   <td>Senate</td>
                                   <td>21/10/2018 12:22pm</td>
                                   <td><button onclick="toggleModal('party-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
-                                  <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
+                                  <td><button onclick="toggleModal('party-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i><a href="updateparty.html"></a></button></td>
                                   <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                               </tr>
                               <tr>
@@ -154,7 +154,7 @@
                                   <td>APC</td>
                                   <td>22/06/2018 01:02pm</td>
                                   <td><button onclick="toggleModal('party-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
-                                  <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
+                                  <td><button onclick="toggleModal('party-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                                   <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                               </tr>
                               <tr>
@@ -163,7 +163,7 @@
                                   <td>Honourable</td>
                                   <td>25/10/2018 10:02am</td>
                                   <td><button onclick="toggleModal('party-details', 'modal')" class="view"><i class="far fa-eye"></i>View</button></td>
-                                  <td><button onclick="toggleModal('product-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
+                                  <td><button onclick="toggleModal('party-edit', 'edit')" class="btn-edit"><i class="fas fa-edit"></i></button></td>
                                   <td><button class="btn-remove"><i class="fas fa-trash-alt"></i></button></td>
                               </tr>
                           </tbody>
@@ -173,7 +173,71 @@
             </div>  
         </section>
 </main>
+<div class="party-modal" id="modal">
+        <div class="party-modal-section" id="party-details">
+            <div class="page-row">
+              <div class="page-col-12 party-modal-heading">
+                <h4>Party Details</h4>
+              </div>
+                <div class="page-col-10">
+                    <p><label for="title" class="ch-label">Party Name</label></p>
+                    <p>
+                        PDP
+                    </p>
+                    <br>
+                    <p><label for="type">Party Logo</label></p>
+                    <div></div>
+                    <br>
+                    <p><label for="description">About Party</label>
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas at architecto molestiae numquam, laborum possimus quam odit nam nisi velit consequatur cumque expedita.</p>
+                    <br>
+                    <p><label for="status">Chairman</label></p>
+                    <p>Bode George</p>
+                    <br>
+                    <p><label for="date" >Date Added</label></p>
+                    <p>22/10/2018 01:02pm</p>
+                    <br>
+                    <button onclick="toggleModal('party-details', 'modal')" class="btn-close"> <i class="icon ion-md-close"></i> Close</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="party-modal" id="edit">
+            <div class="party-modal-section" id="party-edit">
+                <div class="page-row">
+                  <div class="page-col-12 party-modal-heading">
+                    <h4>Product Details</h4>
+                  </div>
+                    <form class="page-col-10">
+                        <p><label for="title" class="ch-label">Party Name</label></p>
+                        <p>
+                           <input type="text" value="">
+                        </p>
+                        <br>
+                        <p><label for="type">Address</label></p>
+                        <p><input type="text" value=""></p>
+                        <br>
+                        <p><label for="about">About Party</label>
+                        </p>
+                        <p><textarea></textarea></p>
+                        <br>
+                        <p><label for="status">Phonenumber</label></p>
+                        <p><input type="text" value=""></p>
+                        <br>
+                        <p><label for="date" >Date Added</label></p>
+                        <p><input type="date" value=""></p>
+                        <br>
+                        <button onclick="toggleModal('party-edit', 'edit')" class="btn-submit"> <i class="icon ion-md-close"></i> Submit</button>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
 <footer id="landing-page-footer">
         <nav>
           <ul class="footer-links">

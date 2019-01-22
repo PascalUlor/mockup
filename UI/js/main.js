@@ -11,8 +11,7 @@ const toggleModal = (id, modal) => {
       document.getElementById(modal).style.display = 'block';
       document.getElementById(id).style.display = 'block';
     }
-  };  
-
+  };
 
 /*
 *DIsplay Backdrop when mobile side bar is toggled

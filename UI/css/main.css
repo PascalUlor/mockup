@@ -206,6 +206,22 @@ Nav Styles Begin
     position: relative;
 }
 
+.welcome-text {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 5rem 5rem 0 5rem;
+    width: 30rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fffffa;
+  }
+
 .section-title {
     color: #2ddf5c;
     text-align: center;
@@ -333,7 +349,7 @@ Nav Styles Begin
 	float: right;
 }
 
-/*Dimensions End
+/*Dimensions End*/
 
 
   
@@ -385,7 +401,7 @@ Nav Styles Begin
     text-decoration: none;
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
-    margin: 15rem;
+    margin: 10rem 15rem 12rem 15rem;
     width: 10rem;
     height: 2rem;
     display: flex;
@@ -1083,6 +1099,22 @@ section.section2 {
         display: flex;
     }
 
+    .welcome-text {
+        color: #FFFFFF;
+        font-size: 2em;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 5rem 15rem 0 15rem;
+        width: 30rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #fffffa;
+      }
+
     .page_button a {
         color: #FFFFFF;
         font-size: 2rem;
@@ -1090,7 +1122,7 @@ section.section2 {
         text-decoration: none;
         padding: 0.5rem 1rem;
         border-radius: 8px;
-        margin: 15rem;
+        margin: 10rem 15rem 12rem 15rem;
         width: 30rem;
         height: 4rem;
         display: flex;
